@@ -1,0 +1,74 @@
+
+/* common */
+.design-a {
+    color: white;
+    text-decoration: none;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+/* navbar */
+.navbar-stiky {
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+
+
+/* slider */
+.content-slider img {
+    height: 500px;
+}
+
+/* content header */
+.body .content-header {
+    height: 150px;
+    background-color: lightblue;
+}
+
+.body .body-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+/* best product */
+.best-product .card-img {
+    position: relative;
+}
+
+.best-product .card-show {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.best-product .card-img:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(255,255,255,0.6);
+    opacity:0;
+    transition: all 0.5s;
+}
+
+.best-product .card-img:hover:after {
+    opacity:1;
+}
+
+.best-product .card-img:hover .card-show {
+    opacity: 1;
+    z-index: 9;
+}
+
+/* https://freshdesignweb.com/free-ecommerce-website-templates/ */
